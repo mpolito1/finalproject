@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SVX5EXVLM3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SVX5EXVLM3');
-</script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Midterm assignment - Royal Ranch Pool website">
+        <meta name="description" content="Final assignment - Royal Ranch Pool website">
         <title>Royal Ranch Pool Club</title>
         <link rel="stylesheet" href="style.css">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SVX5EXVLM3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SVX5EXVLM3');
+        </script>
     </head>
     <body>
         <div class="container">
@@ -24,31 +23,38 @@
             <div class="nav">
                 <div class="flex-container">
                     <div class="flex-item">
-                        <a href="index.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'})">Home</a>
+                        <a href="index.html" id="nav-home" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'})">Home</a>
                     </div>
                     <div class="flex-item">
-                        <a href="staff.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Staff'})">Staff</a>
+                        <a href="staff.html" id="nav-staff" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Staff'})">Staff</a>
                     </div>
                     <div class="flex-item">
-                        <a href="rules.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Rules'})">Rules</a>
+                        <a href="rules.html" id="nav-rules" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Rules'})">Rules</a>
                     </div>
                     <div class="flex-item">
-                        <a href="contact.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'})">Contact Us</a>
+                        <a href="gallery.html" id="nav-gallery" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Gallery'})">Gallery</a>
                     </div>
                     <div class="flex-item">
-                        <a href="affiliate.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Affiliate'})">Affiliate</a>
+                        <a href="contact.html" id="nav-contact" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'})">Contact Us</a>
+                    </div>
+                    <div class="flex-item">
+                        <a href="affiliate.html" id="nav-affiliate" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Affiliate'})">Affiliate</a>
                     </div>
                 </div>
             </div>
             <div class="mainFull">
                 <h1 style="text-align: center;">Welcome to our 2025 Summer season.</h1>
+                <p id="welcome-message">Welcome!</p>
                 <p>Royal Ranch Pool Club is a privately owned facility located in Queens, New York. We have been proudly 
                     serving the residents of our community for over 50 years. We offer a family friendly environment for 
                     those hot summer days where you can rest, relax and spend time with friends alongside the pool. Please 
-                    contact us today to inquire about single or family membership opportunities. </p>
+                    contact us today to inquire about single or family membership opportunities. 
+                    <button onclick="gtag('event', 'click', { event_category: 'callToAction', event_label: 'Donate' }); alert('Thanks for the donation!');">Donate</button></p>
             </div>
+
             <div class="mainHalf">
-                <p><img src="drew-dau-GA2sc8nIOsk-unsplash.jpg" width="100%"></p>
+                <p><img src="drew-dau-GA2sc8nIOsk-unsplash.jpg" width="100%"><font style="font-size: 13px;
+    font-style: italic;">Photo by Drew dau</font></p>
             </div>
             <div class="mainHalf">
                 <p>The pool club offers the following amenities:
@@ -78,7 +84,8 @@
                     Sunday, Saturday & Holidays - 11am until 7pm </p>
             </div>
             <div class="mainHalf">
-                <p><img src="raphael-biscaldi-7RQf2X6aXXI-unsplash.jpg" width="100%"></p>
+                <p><img src="raphael-biscaldi-7RQf2X6aXXI-unsplash.jpg" width="100%"><font style="font-size: 13px;
+    font-style: italic;">Photo by Raphaël Biscaldi</font></p>
             </div>
             <div class="footer">
                 <p>&copy; Royal Ranch Pool Club Website Designed by Marisa B. Polito</p>

@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Google tag (gtag.js) -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SVX5EXVLM3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SVX5EXVLM3');
-</script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Midterm assignment - Royal Ranch Pool website">
+        <meta name="description" content="Final assignment - Royal Ranch Pool website">
         <title>Royal Ranch Pool Club</title>
         <link rel="stylesheet" href="style.css">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SVX5EXVLM3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SVX5EXVLM3');
+        </script>
     </head>
     <body>
         <div class="container">
@@ -25,19 +23,22 @@
             <div class="nav">
                 <div class="flex-container">
                     <div class="flex-item">
-                        <a href="index.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'})">Home</a>
+                        <a href="index.html" id="nav-home" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'})">Home</a>
                     </div>
                     <div class="flex-item">
-                        <a href="staff.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Staff'})">Staff</a>
+                        <a href="staff.html" id="nav-staff" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Staff'})">Staff</a>
                     </div>
                     <div class="flex-item">
-                        <a href="rules.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Rules'})">Rules</a>
+                        <a href="rules.html" id="nav-rules" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Rules'})">Rules</a>
                     </div>
                     <div class="flex-item">
-                        <a href="contact.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'})">Contact Us</a>
+                        <a href="gallery.html" id="nav-gallery" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Gallery'})">Gallery</a>
                     </div>
                     <div class="flex-item">
-                        <a href="affiliate.html" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Affiliate'})">Affiliate</a>
+                        <a href="contact.html" id="nav-contact" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'})">Contact Us</a>
+                    </div>
+                    <div class="flex-item">
+                        <a href="affiliate.html" id="nav-affiliate" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Affiliate'})">Affiliate</a>
                     </div>
                 </div>
             </div>
@@ -46,13 +47,15 @@
                 <table width="75%" align="center">
                     <tr>
                         <td width="25%" align="center">
-                            <img src="Emma.jpg" height="250">
+                            <img src="Emma.jpg" height="250"><br><font style="font-size: 10px;
+    font-style: italic;">Photo by Michael Dam</font>
                         </td>
                         <td width="75%">Emma Smith is a 20 year old at Hofstra University majoring in Underwater Basket Weaving. She gives swim lessons during the year and has been one of our lifeguards for the past 4 years. This year she is our head lifeguard.</td>
                     </tr>
                     <tr>
                         <td align="center">
-                            <img src="Patrick.jpg" height="250">
+                            <img src="Patrick.jpg" height="250"><br><font style="font-size: 10px;
+    font-style: italic;">Photo by ian dooley</font>
                         </td>
                         <td>Patrick Starr is 20 years and in high school. He has a wife and kids. So he is very good with children. He may not be bright but he is a great swimmer. His specialty is in CPR. </td>
                     </tr>
