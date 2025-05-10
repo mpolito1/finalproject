@@ -91,8 +91,8 @@ a:hover {
     .title {
         background-image: url("andy-quezada-RisKqQIPb1Q-unsplash.jpg");
         text-align: center;
-        font-size: 38px;
-        height: 120px;
+        font-size: 45px;
+        height: 110px;
         grid-column: 1;
     }
     
@@ -135,7 +135,7 @@ a:hover {
         background-image: url("andy-quezada-RisKqQIPb1Q-unsplash.jpg");
         text-align: center;
         font-size: 35px;
-        height: 140px;
+        height: 150px;
         grid-column: 1;
     }
     
